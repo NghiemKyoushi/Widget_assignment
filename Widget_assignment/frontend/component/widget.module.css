@@ -1,0 +1,152 @@
+.main {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  height: 70px;
+  border-radius: 35px;
+  background: #000;
+  max-width: 70px;
+  transition: all ease-in-out 0.3s;
+  display: inline-flex;
+  align-items: center;
+}
+.main .icon {
+  transition: all ease-in-out 0.3s;
+  border-radius: 47px;
+  min-width: 70px;
+  border: 5px solid black;
+  background-color: #000;
+}
+.main span {
+  display: inline-flex;
+  max-width: 0;
+  overflow: hidden;
+  transition: all ease-in-out 0.5s;
+}
+.main:hover {
+  max-width: 500px;
+  align-items: center;
+}
+.main:hover .icon {
+  opacity: 0;
+}
+.main:hover span {
+  max-width: 250px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.votePopup {
+  width: 450px;
+  height: 200px;
+  position: fixed;
+  left: 10;
+  background-color: #f7f7f7;
+  margin: 0 auto;
+  transition: top ease-in-out 0.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  animation: fadeIn 1s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.rateText {
+  color: #000;
+}
+.iconClose {
+  position: absolute;
+  color: #c0c0c0;
+  width: 30px;
+  height: 30px;
+  top: 4px;
+  right: 4px;
+}
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(6, 60px); /* background-color: #2196f3; */
+  padding: 20px;
+}
+.gridItemMiddle {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-top: 2px solid rgba(0, 0, 0, 0.8);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.8);
+  border-left: 2px solid rgba(0, 0, 0, 0.8);
+  padding: 16px;
+  height: 55px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+  cursor: pointer;
+}
+.gridItemMiddle:nth-child(1) {
+  border-top-left-radius: 10px 10px;
+  border-bottom-left-radius: 10px 10px;
+}
+.gridItemConner {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 2px solid rgba(0, 0, 0, 0.8);
+  border-top-right-radius: 10px 10px;
+  border-bottom-right-radius: 10px 10px;
+  padding: 16px;
+  height: 55px;
+  font-size: 20px;
+  font-weight: 900;
+  color: #000;
+  text-align: center;
+  cursor: pointer;
+}
+.gridItemMiddle:hover {
+  background-color: #c0c0c0;
+}
+.gridItemConner:hover {
+  background-color: #c0c0c0;
+}
+.rateText {
+  font-size: 20px;
+  font-weight: 900;
+}
+.textInfoContainer {
+  display: flex;
+  width: 370px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.textInfo {
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+}
+.textCheckRateContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.textCheckRate {
+  color: #000;
+  font-size: 20px;
+  font-weight: 900;
+}
+.iconFeedBack {
+  color: yellow;
+  border: 8px solid black;
+  background-color: #000;
+  border-radius: 47px;
+}
+.textSatisfied{
+  color: #000;
+  font-size: 16px;
+}
+
